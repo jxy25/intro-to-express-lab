@@ -62,6 +62,10 @@ app.get("/shoes", (req, res) => {
     filtered = shoes.filter((shoe) => shoe.type === type);
   }
 
+  if (!minPrice && !maxPrice && !type) {
+    res.send(shoes);
+  }
+
   res.send(filtered);
 });
 
