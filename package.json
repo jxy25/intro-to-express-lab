@@ -11,8 +11,17 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "express": "^5.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jxy25/intro-to-express-lab.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jxy25/intro-to-express-lab/issues"
+  },
+  "homepage": "https://github.com/jxy25/intro-to-express-lab#readme",
+  "devDependencies": {},
+  "description": ""
 }
