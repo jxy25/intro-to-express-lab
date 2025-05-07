@@ -1,5 +1,5 @@
+import express from "express";
 //1. Be Polite, Greet the User
-const express = require("express");
 
 const app = express();
 
@@ -52,6 +52,9 @@ app.get("/shoes", (req, res) => {
   const type = req.query.type;
   const minPrice = req.query["min-price"];
   const maxPrice = req.query["max-price"];
+
+  let filtered = shoes;
+
   if (minPrice) {
     filtered = shoes.filter((shoe) => shoe.price >= minPrice);
   }
